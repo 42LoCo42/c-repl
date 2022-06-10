@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+(($# == 0)) && {
+	echo "Usage: $0 <identifier> [headers]" >&2
+	exit 1
+}
+
+sym="$1"
+shift
+{
+	echo "#include <stdio.h>"
+	for header in "$@"; do
+		echo "#include <$header.h>"
+	done
+	cat << EOF
+int main() {
+	printf("%d\n", $sym);
+	return 0;
+}
+EOF
+} | tcc -run -
