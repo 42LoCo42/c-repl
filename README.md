@@ -20,6 +20,5 @@ abcde$
 - `?`: Lookup a symbol (or a combination of symbols) in some headers
 - `/`: Load a library. E.g. to load libsodium, do: `/ sodium`
 ## Limitations / TODOs
-- c-repl is currently only targeting the System V ABI for x86-64
 - Numbers are only read as base 10. In the example above, it would be better to enter 0644 (octal) instead of 420.
 - String input should understand some escape sequences and (optionally) quoting (or else spaces would have to be escaped as well)

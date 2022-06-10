@@ -1,4 +1,4 @@
 CFLAGS := -Wall -Wextra -g
 LDFLAGS := -ldl
 
-repl: repl.c call.s
+repl: repl.c call.S
