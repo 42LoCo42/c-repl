@@ -22,3 +22,4 @@ abcde$
 ## Limitations / TODOs
 - Numbers are only read as base 10. In the example above, it would be better to enter 0644 (octal) instead of 420.
 - String input should understand some escape sequences and (optionally) quoting (or else spaces would have to be escaped as well)
+- We need variables & autocompletion!
